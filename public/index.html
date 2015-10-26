@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>D3 Linear Chart</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.js" charset="utf-8"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+</head>
+<body>
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div  ng-app="chartApp" ng-controller="MainCtrl">
+                <h1>D3 linear</h1>
+                <div linear-d3 data="chartData"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/lineapp.js"></script>
+<script src="js/chartData-service.js"></script>
+<script src="js/linearD3-directive.js"></script>
+
+
+</body>
+</html>
